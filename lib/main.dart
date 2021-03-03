@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 cellAlignment: pw.Alignment.center,
                 // cellHeight: 10,
                 // headerHeight: 10,
-                headers: ["Flat No", "SFT", "Amount"],
+                headers: ["Flat No", "SFT", "Amount", "Date", "Signature"],
                 data:
                     apartments.where((element) => element.isSelected).map((e) {
                   return [
