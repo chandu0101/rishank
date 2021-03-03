@@ -191,13 +191,15 @@ class _HomeScreenState extends State<HomeScreen> {
         pageFormat: PdfPageFormat.standard,
         build: (pw.Context context) {
           return [
-            pw.Text("Rishank Imperia",
-                textAlign: pw.TextAlign.center,
-                style:
-                    pw.TextStyle(fontSize: 20, fontWeight: pw.FontWeight.bold)),
-            pw.SizedBox(height: 10),
+            // pw.Text("Rishank Imperia",
+            //     textAlign: pw.TextAlign.center,
+            //     style:
+            //         pw.TextStyle(fontSize: 20, fontWeight: pw.FontWeight.bold)),
+            // pw.SizedBox(height: 10),
             pw.Table.fromTextArray(
                 cellAlignment: pw.Alignment.center,
+                // cellHeight: 10,
+                // headerHeight: 10,
                 headers: ["Flat No", "SFT", "Amount"],
                 data:
                     apartments.where((element) => element.isSelected).map((e) {
