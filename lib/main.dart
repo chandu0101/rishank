@@ -69,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+
     apartments.sort((a1, a2) => a1.number.compareTo(a2.number));
   }
 
