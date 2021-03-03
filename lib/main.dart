@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
-import 'package:srinu_anna/constants.dart';
+import 'package:rishank/constants.dart';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
+import "dart:html";
 
 void main() {
+  final el = document.getElementById("loading-indicator");
+  el?.remove();
   runApp(SrinuAnnaApp());
 }
 
@@ -109,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onChanged: _handleSearchChange,
 
                   decoration: InputDecoration(
-                      hintText: "Search..",
+                      hintText: "Search...",
                       filled: true,
                       fillColor: kBgLightColor,
                       border: OutlineInputBorder(
