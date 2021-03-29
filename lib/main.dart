@@ -202,6 +202,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 // cellHeight: 10,
                 // headerHeight: 10,
                 headers: ["Flat No", "SFT", "Amount", "Date", "Signature"],
+                columnWidths: {
+                  0: pw.FixedColumnWidth(100),
+                  1: pw.FixedColumnWidth(100),
+                  2: pw.FixedColumnWidth(100),
+                  3: pw.FixedColumnWidth(120),
+                  4: pw.FixedColumnWidth(400),
+                },
                 data:
                     apartments.where((element) => element.isSelected).map((e) {
                   return [
